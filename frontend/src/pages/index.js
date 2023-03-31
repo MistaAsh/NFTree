@@ -11,22 +11,21 @@ import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const allNFTs = [];
-  const address = "0xd8da6bf26964af9d7eed9e03e53415d37aa96045";
-  const chains = [EvmChain.ETHEREUM, EvmChain.BSC, EvmChain.POLYGON];
-  
-  Moralis.start({
-    apiKey: "",
-  });
+  // const allNFTs = [];
+  // const address = "0xd8da6bf26964af9d7eed9e03e53415d37aa96045";
+  // const chains = [EvmChain.ETHEREUM, EvmChain.BSC, EvmChain.POLYGON];
 
-  chains.map(async (chain) => {
-    const response = await Moralis.EvmApi.nft.getWalletNFTs({
-      address,
-      chain,
-    });
-    allNFTs.push(response);
-  });
-  console.log("hello");
+  // const getNFTs = async () => {
+  //   await Moralis.start({
+  //     apiKey: process.env.MORALIS_API_KEY,
+  //   });
+  //   const response = await Moralis.EvmApi.nft.getWalletNFTs({
+  //     address,
+  //     chain: EvmChain.ETHEREUM,
+  //   });
+  //   console.log(response);
+  // }
+  // getNFTs();
   
   return (
     <>

@@ -13,10 +13,12 @@
     "@moralisweb3/next": "^2.18.1",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
+    "ethers": "^5.7.2",
     "moralis": "^2.18.1",
     "next": "^13.2.4",
     "next-auth": "^4.20.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "wagmi": "^0.12.8"
   }
 }
