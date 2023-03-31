@@ -6,14 +6,14 @@ async function main() {
   console.log("Account balance:", (await deployer.getBalance()).toString());
 
   const NFTree = await ethers.getContractFactory("NFTree");
-  const nftree = await NFTree.deploy();
+  const contract = await NFTree.deploy();
 
-  console.log("NFTree address:", nftree.address);
+  console.log("Contract deployed at:", contract.address);
 }
 
 main()
-  .then(() => process.exit(0))
-  .catch((error) => {
-    console.error(error);
-    process.exit(1);
-  });
+.then(() => process.exit(0))
+.catch(error => {
+  console.error(error);
+  process.exit(1);
+});
